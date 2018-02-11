@@ -22,7 +22,6 @@ public class RepoMiner implements Study {
         this.reportFilePath = reportFilePath;
     }
 
-    @Override
     public void execute() {
         try {
             Files.write(Paths.get(reportFilePath), "Commit SHA, Old function signature, New function signature".getBytes());

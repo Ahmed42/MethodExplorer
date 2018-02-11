@@ -11,9 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        
-        String repoURL = "https://github.com/paul-hammant/qdox.git";
-        String reportFilePath = "qdox_report.csv";
+
+        String repoURL = args[0]; // "https://github.com/paul-hammant/qdox.git";
+        String reportFilePath = args[1]; // "qdox_report.csv";
 
         new RepoDriller().start(new RepoMiner(repoURL, reportFilePath));
 
@@ -25,6 +25,6 @@ public class Main {
 
 
 // https://github.com/mauricioaniche/repodriller.git    ~300 commits
-// https://github.com/Motasim/Chat-System.git           22 commits
+// https://github.com/Motasim/Chat-System.git           22 commits      8 seconds
 // https://github.com/alibaba/dubbo.git                 ~2100 commits
 // https://github.com/paul-hammant/qdox.git             ~1600 commits   96 seconds

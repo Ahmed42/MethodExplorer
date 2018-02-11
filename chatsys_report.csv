@@ -1,0 +1,2 @@
+Commit SHA, Old function signature, New function signature
+a47629741dac95a6046fe2813fcc2993a56f3074, initializeTCPClient(username, connection), initializeTCPClient(username, connection, out, in)

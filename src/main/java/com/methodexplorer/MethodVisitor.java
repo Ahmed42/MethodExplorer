@@ -20,13 +20,16 @@ import java.util.Map;
  */
 public class MethodVisitor implements CommitVisitor {
     private Map<String, JavaMethod> Methods;
+    private int noOfCommits;
 
     public MethodVisitor() {
         Methods = new HashMap<String, JavaMethod>();
+        noOfCommits = 0;
     }
 
     public void process(SCMRepository scmRepository, Commit commit, PersistenceMechanism persistenceMechanism) {
-        System.out.println("Currently processing: " + commit.getHash());
+        noOfCommits++;
+        System.out.println("Currently processing commit no. " + noOfCommits + ", SHA: " + commit.getHash());
         for(Modification modification : commit.getModifications()) {
             // add or modify modifications only
             String code = modification.getSourceCode();
@@ -58,5 +61,9 @@ public class MethodVisitor implements CommitVisitor {
                 }
             }
         }
+    }
+
+    public void finalize(SCMRepository repo, PersistenceMechanism writer) {
+        System.out.println("Number of commits processed: " + noOfCommits);
     }
 }
