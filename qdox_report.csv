@@ -1,97 +1,97 @@
 Commit SHA, Old function signature, New function signature
-fa88679e1a75501cd747dccf11a60d34a40609ca, scan(), scan(fileVisitor)
-fa88679e1a75501cd747dccf11a60d34a40609ca, yy_unpack(), yy_unpack(packed, offset, trans)
-fa88679e1a75501cd747dccf11a60d34a40609ca, assertLex(expectedToken, lexer), assertLex(expectedToken, expectedText, lexer)
-7dae4b2961d9e827318b4a10ed96d9279a701fd1, createType(typeName), createType(typeName, dimensions)
-1da6dec6b1bd99106b4910bc43abe7d0c7ba1c89, buildFileMap(), buildFileMap(directory, sourceFiles)
-d5c1dc371a9b0e3611cb1c368833bd5cb5cfbc9d, addSource(reader), addSource(file, reader)
-d80c235d79cbd1e614c6d690b3aeba34b1153d23, addField(javaField), addField(field, binaryBuilder)
-64af5869ba88d4f7f3985b75ffd0d4a1dba51382, getMethodBySignature(name, parameterTypes), getMethodBySignature(name, parameterTypes, superclasses)
-0da62689cd819938b929b3ab6af7503956c0d437, getNamedParameter(key), getNamedParameter(tagName, parameterName)
-0da62689cd819938b929b3ab6af7503956c0d437, writeBody(result), writeBody(result, withModifiers, isDeclaration, isPrettyPrint)
-8798b056225768066e2e8d88b84c6a18f4398e14, createDocletTag(tag, text), createDocletTag(tag, text, lineNumber, javaSource)
-8798b056225768066e2e8d88b84c6a18f4398e14, addJavaDocTag(tag, text), addJavaDocTag(tag, text, lineNumber)
-69652fbddbd2a20738f614d0766f77c6eca2978d, getTagByName(name), getTagByName(name, inherited)
-69652fbddbd2a20738f614d0766f77c6eca2978d, getTagsByName(name), getTagsByName(name, inherited)
-f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, getMethods(), getMethods(superclasses)
-f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, getBeanProperties(), getBeanProperties(superclasses)
-f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, getOrCreateProperty(propertyName), getOrCreateProperty(beanPropertyMap, propertyName)
-f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, getBeanProperty(propertyName), getBeanProperty(propertyName, superclasses)
-3ef62ce87a932ba982ec365206169201f771a9e9, parse(), parse(input)
-f95b8699243e2e042d031f61d298ae341b8b398a, verify(), verify(id, inputStream)
-0b31d3727042a29b92e9b5c9d950c57cf05d85f5, addSourceTree(file), addSourceTree(file, errorHandler)
-dc7c53fb69424dcd98295d81f2a42d0392639469, getValue(), getValue(annotation, property)
-baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, getGenericValue(), getGenericValue(typeVariableList)
-baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, getResolvedValue(), getResolvedValue(typeParameters)
-baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, getResolvedGenericValue(), getResolvedGenericValue(typeParameters)
-5b307bdd317e1784b732d2dc9bc854dd38b87aba, createTypeVariable(typeVariableDef), createTypeVariable(name, typeParams)
-4677042255bf26e038333a033147feaa267ced43, getMethodBySignature(name, parameterTypes, superclasses), getMethodBySignature(name, parameterTypes, superclasses, varArg)
-4677042255bf26e038333a033147feaa267ced43, getMethodsBySignature(name, parameterTypes, superclasses), getMethodsBySignature(name, parameterTypes, superclasses, varArg)
-4677042255bf26e038333a033147feaa267ced43, signatureMatches(name, parameterTypes), signatureMatches(name, parameterTypes, varArg)
-bb5625593c7bdbf7ba9ee36fc5171ea2e71b74d5, getMethod(i), getMethod(name, parameterTypes, varArgs)
-06ec9acbb1ebb9b3f646ebdbab771010001a6979, getReturnType(), getReturnType(resolve)
-06ec9acbb1ebb9b3f646ebdbab771010001a6979, getReturnType(resolve), getReturnType(resolve, callingClass)
-06ec9acbb1ebb9b3f646ebdbab771010001a6979, resolve(), resolve(parentClass)
-06ec9acbb1ebb9b3f646ebdbab771010001a6979, resolve(parentClass), resolve(parentClass, subclass)
-13c19a016aaf5c4433ed507988ca767944ee6d7a, getParameterTypes(), getParameterTypes(resolve)
-13c19a016aaf5c4433ed507988ca767944ee6d7a, getParameterTypes(resolve), getParameterTypes(resolve, callingClass)
-dabb2483bbc17a237bd0a6f7d6fc799c7f2e3b59, addParameter(javaParameter), addParameter(method, parameter)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, newJavaField(), newJavaField(type, name)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, newType(typeName), newType(fullname, dimensions)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, setComment(comment), setComment(fld, comment)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, setInitializationExpression(initializationExpression), setInitializationExpression(fld, expression)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, setModifiers(modifiers), setModifiers(fld, modifiers)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, setName(name), setName(fld, name)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, setType(type), setType(fld, type)
-62ee4cff1d817288eddde1e832d6cb52cb53b7b2, addClass(def), addClass(pckg, clazz)
-cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, setClassLibrary(classLibrary), setClassLibrary(source, library)
-cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, setPackage(packge), setPackage(source, pckg)
-cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, addImport(importName), addImport(source, imp)
-37270d0abca381d36c355d3612e1e20c37856fdb, newJavaMethod(), newJavaMethod(returns, name)
-37270d0abca381d36c355d3612e1e20c37856fdb, newJavaParameter(type, name), newJavaParameter(type, name, varArgs)
-37270d0abca381d36c355d3612e1e20c37856fdb, setExceptions(exceptions), setExceptions(method, exceptions)
-37270d0abca381d36c355d3612e1e20c37856fdb, setConstructor(constructor), setConstructor(method, isConstructor)
-37270d0abca381d36c355d3612e1e20c37856fdb, setReturns(returns), setReturns(method, type)
-37270d0abca381d36c355d3612e1e20c37856fdb, addMethod(meth), addMethod(clazz, method)
-37270d0abca381d36c355d3612e1e20c37856fdb, setSourceCode(sourceCode), setSourceCode(method, code)
-3658d6d53793a9a44326f14ce985fc70c612e8d6, setEnum(isEnum), setEnum(clazz, isEnum)
-3658d6d53793a9a44326f14ce985fc70c612e8d6, setImplementz(implementz), setImplementz(clazz, implementz)
-3658d6d53793a9a44326f14ce985fc70c612e8d6, setInterface(interfce), setInterface(clazz, isInterface)
-3658d6d53793a9a44326f14ce985fc70c612e8d6, setSuperClass(type), setSuperClass(clazz, type)
-b35726f9efe60ea4be0e33d4418b3fb33d0bf96a, newJavaSource(), newJavaSource(context)
-b35726f9efe60ea4be0e33d4418b3fb33d0bf96a, newType(fullname, dimensions), newType(fullname, dimensions, source)
-e3cc93e7b1082315dfc64e972ab4fb4d4e5b253a, getJavaClass(), getJavaClass(name)
-f6311b42e3f3cad61a44308388194e3767ddd4e7, appendSource(stream), appendSource(reader, encoding)
-c7161f4f6e6e1ca2f6302b1c08c354b5778209a6, newInstance(), newInstance(library)
-1a38058e89d59e42860141abb3662122de6c8423, getMethodsFromSuperclassAndInterfaces(callingClazz), getMethodsFromSuperclassAndInterfaces(rootClass, callingClazz)
-3145e2d3c9f0d51f2cc5ee03db5582dbc95354aa, getJavaClass(name), getJavaClass(name, createStub)
-c92a7d397f9d5e6645ae9dbd70549150df1f4334, setSource(javaSource), setSource(clazz, source)
-eed0ce4277d3f4ac76c573d40da935801baaed8f, setClasses(classes), setClasses(source, classes)
-eed0ce4277d3f4ac76c573d40da935801baaed8f, setImports(imports), setImports(source, imports)
-9debc776dd9d6da71999a254c698c4c23b6b3a3b, lexAssert(lex), lexAssert(lex, text)
-aeb6acdda65ca7e20a1447b5bee5db0f2859586a, newMockFile(name), newMockFile(name, isDirectory)
-ad30c4ee9dcaedad15f11181b1f8ed7ffacc1cff, setParentClass(parentClass), setParentClass(method, clazz)
-ad30c4ee9dcaedad15f11181b1f8ed7ffacc1cff, setParameters(parameters), setParameters(method, parameters)
-85ad7e306a5cfd5aeff54e6efee633341d28237e, getConstructor(parameterTypes), getConstructor(parameterTypes, varArgs)
-ec019f4a1a1b9601e2f5b474753ef3e1808c1bd1, getModelBuilder(), getModelBuilder(url)
-ec019f4a1a1b9601e2f5b474753ef3e1808c1bd1, parse(input), parse(reader, url)
-e41562879216c55784d177a5db51df5810637e38, getClassByName(name), getClassByName(clss, name)
-d190f83881018448499e28edc4d82bfea5b4d1c1, toString(), toString(str)
-dcaf7322b9e3028b005784bd037b9b479d6cb6ab, getResolvedGenericFullyQualifiedName(), getResolvedGenericFullyQualifiedName(typeParameters)
-dcaf7322b9e3028b005784bd037b9b479d6cb6ab, getResolvedFullyQualifiedName(), getResolvedFullyQualifiedName(typeParameters)
-588dd41dece056dfdc808a66b933ffc7c969b1db, isPrimitive(), isPrimitive(value)
-43df6d404d367bbde5db06fcb20f8ef38e7d552a, getTypeVariableIndex(superClass), getTypeVariableIndex(declaringClass, fqn)
-3cde4c401eb2c3b442df40f609c460a2a8a20deb, getContext(), getContext(genericDeclaration)
-42905bdb6e757ff73c22dddd61077417347f9a65, resolve(parentClass, subclass), resolve(base, declaringClass, callingClass)
-022c04d0d3d004cb3147d68e6e42b776ce04f0eb, getResolvedFullyQualifiedName(typeParameters), getResolvedFullyQualifiedName(base, typeParameters)
-3ed80d3178976e8d4538a309195ee5fa629f53e0, getResolvedValue(typeParameters), getResolvedValue(base, typeParameters)
-b7a5723ccf091424b342136435af1fcda315bc71, getResolvedGenericFullyQualifiedName(typeParameters), getResolvedGenericFullyQualifiedName(base, typeParameters)
-2bc49af7e3a3a74982873c7f109526cbadcad672, getResolvedGenericValue(typeParameters), getResolvedGenericValue(base, typeParameters)
-15454d141817df4febb9c7eb92d61ad1f6d215b7, getGenericValue(typeVariableList), getGenericValue(base, typeVariableList)
-afd5eae2da50b7b0bae0afd6faf416ab35c37315, getActualTypeArguments(), getActualTypeArguments(base)
-93def106b573199cfed94cc0d5a8b2e38111b63f, getDimensions(), getDimensions(type)
-93def106b573199cfed94cc0d5a8b2e38111b63f, getDeclaringClass(), getDeclaringClass(type)
-6cace3354e774cace7b95927e48e816f1528c491, newJavaClass(fullname), newJavaClass(fullname, dimensions)
-a7345b7eada95c414c50cb7802a59af4c5874ad9, createUnresolved(name, dimensions, context), createUnresolved(typeDef, dimensions, context, typeResolver)
-7f97a2399535d3de7ddc7b6d9a89f51c8e5f1c50, resolveJavaModule(), resolveJavaModule(sourceFolder)
-7d4a4b765aeeb759761114811bb8c3e6e9107537, setupLex(token, value), setupLex(token, value, codeBody)
+fa88679e1a75501cd747dccf11a60d34a40609ca, "scan()", "scan(fileVisitor)"
+fa88679e1a75501cd747dccf11a60d34a40609ca, "yy_unpack()", "yy_unpack(packed, offset, trans)"
+fa88679e1a75501cd747dccf11a60d34a40609ca, "assertLex(expectedToken, lexer)", "assertLex(expectedToken, expectedText, lexer)"
+7dae4b2961d9e827318b4a10ed96d9279a701fd1, "createType(typeName)", "createType(typeName, dimensions)"
+1da6dec6b1bd99106b4910bc43abe7d0c7ba1c89, "buildFileMap()", "buildFileMap(directory, sourceFiles)"
+d5c1dc371a9b0e3611cb1c368833bd5cb5cfbc9d, "addSource(reader)", "addSource(file, reader)"
+d80c235d79cbd1e614c6d690b3aeba34b1153d23, "addField(javaField)", "addField(field, binaryBuilder)"
+64af5869ba88d4f7f3985b75ffd0d4a1dba51382, "getMethodBySignature(name, parameterTypes)", "getMethodBySignature(name, parameterTypes, superclasses)"
+0da62689cd819938b929b3ab6af7503956c0d437, "getNamedParameter(key)", "getNamedParameter(tagName, parameterName)"
+0da62689cd819938b929b3ab6af7503956c0d437, "writeBody(result)", "writeBody(result, withModifiers, isDeclaration, isPrettyPrint)"
+8798b056225768066e2e8d88b84c6a18f4398e14, "createDocletTag(tag, text)", "createDocletTag(tag, text, lineNumber, javaSource)"
+8798b056225768066e2e8d88b84c6a18f4398e14, "addJavaDocTag(tag, text)", "addJavaDocTag(tag, text, lineNumber)"
+69652fbddbd2a20738f614d0766f77c6eca2978d, "getTagByName(name)", "getTagByName(name, inherited)"
+69652fbddbd2a20738f614d0766f77c6eca2978d, "getTagsByName(name)", "getTagsByName(name, inherited)"
+f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, "getMethods()", "getMethods(superclasses)"
+f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, "getBeanProperties()", "getBeanProperties(superclasses)"
+f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, "getOrCreateProperty(propertyName)", "getOrCreateProperty(beanPropertyMap, propertyName)"
+f2ce6a4e79e4dbe53d573b95c4142dd06b3a743c, "getBeanProperty(propertyName)", "getBeanProperty(propertyName, superclasses)"
+3ef62ce87a932ba982ec365206169201f771a9e9, "parse()", "parse(input)"
+f95b8699243e2e042d031f61d298ae341b8b398a, "verify()", "verify(id, inputStream)"
+0b31d3727042a29b92e9b5c9d950c57cf05d85f5, "addSourceTree(file)", "addSourceTree(file, errorHandler)"
+dc7c53fb69424dcd98295d81f2a42d0392639469, "getValue()", "getValue(annotation, property)"
+baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, "getGenericValue()", "getGenericValue(typeVariableList)"
+baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, "getResolvedValue()", "getResolvedValue(typeParameters)"
+baaf08224d37fdea6c1f4a86fdfd35c9fec75e03, "getResolvedGenericValue()", "getResolvedGenericValue(typeParameters)"
+5b307bdd317e1784b732d2dc9bc854dd38b87aba, "createTypeVariable(typeVariableDef)", "createTypeVariable(name, typeParams)"
+4677042255bf26e038333a033147feaa267ced43, "getMethodBySignature(name, parameterTypes, superclasses)", "getMethodBySignature(name, parameterTypes, superclasses, varArg)"
+4677042255bf26e038333a033147feaa267ced43, "getMethodsBySignature(name, parameterTypes, superclasses)", "getMethodsBySignature(name, parameterTypes, superclasses, varArg)"
+4677042255bf26e038333a033147feaa267ced43, "signatureMatches(name, parameterTypes)", "signatureMatches(name, parameterTypes, varArg)"
+bb5625593c7bdbf7ba9ee36fc5171ea2e71b74d5, "getMethod(i)", "getMethod(name, parameterTypes, varArgs)"
+06ec9acbb1ebb9b3f646ebdbab771010001a6979, "getReturnType()", "getReturnType(resolve)"
+06ec9acbb1ebb9b3f646ebdbab771010001a6979, "getReturnType(resolve)", "getReturnType(resolve, callingClass)"
+06ec9acbb1ebb9b3f646ebdbab771010001a6979, "resolve()", "resolve(parentClass)"
+06ec9acbb1ebb9b3f646ebdbab771010001a6979, "resolve(parentClass)", "resolve(parentClass, subclass)"
+13c19a016aaf5c4433ed507988ca767944ee6d7a, "getParameterTypes()", "getParameterTypes(resolve)"
+13c19a016aaf5c4433ed507988ca767944ee6d7a, "getParameterTypes(resolve)", "getParameterTypes(resolve, callingClass)"
+dabb2483bbc17a237bd0a6f7d6fc799c7f2e3b59, "addParameter(javaParameter)", "addParameter(method, parameter)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "newJavaField()", "newJavaField(type, name)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "newType(typeName)", "newType(fullname, dimensions)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "setComment(comment)", "setComment(fld, comment)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "setInitializationExpression(initializationExpression)", "setInitializationExpression(fld, expression)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "setModifiers(modifiers)", "setModifiers(fld, modifiers)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "setName(name)", "setName(fld, name)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "setType(type)", "setType(fld, type)"
+62ee4cff1d817288eddde1e832d6cb52cb53b7b2, "addClass(def)", "addClass(pckg, clazz)"
+cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, "setClassLibrary(classLibrary)", "setClassLibrary(source, library)"
+cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, "setPackage(packge)", "setPackage(source, pckg)"
+cfccdcb9ecf0b8077bc791e83f2336a3755f34e7, "addImport(importName)", "addImport(source, imp)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "newJavaMethod()", "newJavaMethod(returns, name)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "newJavaParameter(type, name)", "newJavaParameter(type, name, varArgs)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "setExceptions(exceptions)", "setExceptions(method, exceptions)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "setConstructor(constructor)", "setConstructor(method, isConstructor)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "setReturns(returns)", "setReturns(method, type)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "addMethod(meth)", "addMethod(clazz, method)"
+37270d0abca381d36c355d3612e1e20c37856fdb, "setSourceCode(sourceCode)", "setSourceCode(method, code)"
+3658d6d53793a9a44326f14ce985fc70c612e8d6, "setEnum(isEnum)", "setEnum(clazz, isEnum)"
+3658d6d53793a9a44326f14ce985fc70c612e8d6, "setImplementz(implementz)", "setImplementz(clazz, implementz)"
+3658d6d53793a9a44326f14ce985fc70c612e8d6, "setInterface(interfce)", "setInterface(clazz, isInterface)"
+3658d6d53793a9a44326f14ce985fc70c612e8d6, "setSuperClass(type)", "setSuperClass(clazz, type)"
+b35726f9efe60ea4be0e33d4418b3fb33d0bf96a, "newJavaSource()", "newJavaSource(context)"
+b35726f9efe60ea4be0e33d4418b3fb33d0bf96a, "newType(fullname, dimensions)", "newType(fullname, dimensions, source)"
+e3cc93e7b1082315dfc64e972ab4fb4d4e5b253a, "getJavaClass()", "getJavaClass(name)"
+f6311b42e3f3cad61a44308388194e3767ddd4e7, "appendSource(stream)", "appendSource(reader, encoding)"
+c7161f4f6e6e1ca2f6302b1c08c354b5778209a6, "newInstance()", "newInstance(library)"
+1a38058e89d59e42860141abb3662122de6c8423, "getMethodsFromSuperclassAndInterfaces(callingClazz)", "getMethodsFromSuperclassAndInterfaces(rootClass, callingClazz)"
+3145e2d3c9f0d51f2cc5ee03db5582dbc95354aa, "getJavaClass(name)", "getJavaClass(name, createStub)"
+c92a7d397f9d5e6645ae9dbd70549150df1f4334, "setSource(javaSource)", "setSource(clazz, source)"
+eed0ce4277d3f4ac76c573d40da935801baaed8f, "setClasses(classes)", "setClasses(source, classes)"
+eed0ce4277d3f4ac76c573d40da935801baaed8f, "setImports(imports)", "setImports(source, imports)"
+9debc776dd9d6da71999a254c698c4c23b6b3a3b, "lexAssert(lex)", "lexAssert(lex, text)"
+aeb6acdda65ca7e20a1447b5bee5db0f2859586a, "newMockFile(name)", "newMockFile(name, isDirectory)"
+ad30c4ee9dcaedad15f11181b1f8ed7ffacc1cff, "setParentClass(parentClass)", "setParentClass(method, clazz)"
+ad30c4ee9dcaedad15f11181b1f8ed7ffacc1cff, "setParameters(parameters)", "setParameters(method, parameters)"
+85ad7e306a5cfd5aeff54e6efee633341d28237e, "getConstructor(parameterTypes)", "getConstructor(parameterTypes, varArgs)"
+ec019f4a1a1b9601e2f5b474753ef3e1808c1bd1, "getModelBuilder()", "getModelBuilder(url)"
+ec019f4a1a1b9601e2f5b474753ef3e1808c1bd1, "parse(input)", "parse(reader, url)"
+e41562879216c55784d177a5db51df5810637e38, "getClassByName(name)", "getClassByName(clss, name)"
+d190f83881018448499e28edc4d82bfea5b4d1c1, "toString()", "toString(str)"
+dcaf7322b9e3028b005784bd037b9b479d6cb6ab, "getResolvedGenericFullyQualifiedName()", "getResolvedGenericFullyQualifiedName(typeParameters)"
+dcaf7322b9e3028b005784bd037b9b479d6cb6ab, "getResolvedFullyQualifiedName()", "getResolvedFullyQualifiedName(typeParameters)"
+588dd41dece056dfdc808a66b933ffc7c969b1db, "isPrimitive()", "isPrimitive(value)"
+43df6d404d367bbde5db06fcb20f8ef38e7d552a, "getTypeVariableIndex(superClass)", "getTypeVariableIndex(declaringClass, fqn)"
+3cde4c401eb2c3b442df40f609c460a2a8a20deb, "getContext()", "getContext(genericDeclaration)"
+42905bdb6e757ff73c22dddd61077417347f9a65, "resolve(parentClass, subclass)", "resolve(base, declaringClass, callingClass)"
+022c04d0d3d004cb3147d68e6e42b776ce04f0eb, "getResolvedFullyQualifiedName(typeParameters)", "getResolvedFullyQualifiedName(base, typeParameters)"
+3ed80d3178976e8d4538a309195ee5fa629f53e0, "getResolvedValue(typeParameters)", "getResolvedValue(base, typeParameters)"
+b7a5723ccf091424b342136435af1fcda315bc71, "getResolvedGenericFullyQualifiedName(typeParameters)", "getResolvedGenericFullyQualifiedName(base, typeParameters)"
+2bc49af7e3a3a74982873c7f109526cbadcad672, "getResolvedGenericValue(typeParameters)", "getResolvedGenericValue(base, typeParameters)"
+15454d141817df4febb9c7eb92d61ad1f6d215b7, "getGenericValue(typeVariableList)", "getGenericValue(base, typeVariableList)"
+afd5eae2da50b7b0bae0afd6faf416ab35c37315, "getActualTypeArguments()", "getActualTypeArguments(base)"
+93def106b573199cfed94cc0d5a8b2e38111b63f, "getDimensions()", "getDimensions(type)"
+93def106b573199cfed94cc0d5a8b2e38111b63f, "getDeclaringClass()", "getDeclaringClass(type)"
+6cace3354e774cace7b95927e48e816f1528c491, "newJavaClass(fullname)", "newJavaClass(fullname, dimensions)"
+a7345b7eada95c414c50cb7802a59af4c5874ad9, "createUnresolved(name, dimensions, context)", "createUnresolved(typeDef, dimensions, context, typeResolver)"
+7f97a2399535d3de7ddc7b6d9a89f51c8e5f1c50, "resolveJavaModule()", "resolveJavaModule(sourceFolder)"
+7d4a4b765aeeb759761114811bb8c3e6e9107537, "setupLex(token, value)", "setupLex(token, value, codeBody)"

@@ -13,6 +13,7 @@ import java.nio.file.StandardOpenOption;
  */
 
 // I wrote this because the CSVFile that comes with RepoDriller insists on putting inconsistent " " around methods signatures
+// ^ I now know why (thanks to Github). Commas in methods' signatures interfere with the CSV format, hence the quotes around more-than-a-single param methods.
 public class CSVEntryWriter implements PersistenceMechanism {
     private String filePath;
 
@@ -27,7 +28,7 @@ public class CSVEntryWriter implements PersistenceMechanism {
         String oldSignature = (String) objects[1];
         String newSignature = (String) objects[2];
 
-        String entry = "\n" + hash + ", " + oldSignature + ", " + newSignature;
+        String entry = "\n" + hash + ", \"" + oldSignature + "\", \"" + newSignature + "\"";
         try {
             Files.write(Paths.get(filePath), entry.getBytes(), StandardOpenOption.APPEND);
         } catch (IOException ex) {
