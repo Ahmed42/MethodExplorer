@@ -48,10 +48,11 @@ public class MethodVisitor implements CommitVisitor {
                         JavaMethod oldMethodDetails = Methods.get(javaMethod.getName());
                         if (currentNoOfParams > oldMethodDetails.getParameters().size()) {
                             // record the old signature and the new
+
                             persistenceMechanism.write(
                                     commit.getHash(),
-                                    oldMethodDetails.getCallSignature(),
-                                    javaMethod.getCallSignature());
+                                    oldMethodDetails.getDeclarationSignature(false),
+                                    javaMethod.getDeclarationSignature(false));
                             Methods.put(javaMethod.getName(), javaMethod);
                         }
                     }
